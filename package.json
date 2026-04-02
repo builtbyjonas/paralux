@@ -1,0 +1,78 @@
+{
+  "name": "paralux",
+  "version": "0.1.0",
+  "description": "A modern, high-performance, physics-driven scroll engine designed for React, Next.js, and vanilla web applications.",
+  "main": "distribution/index.js",
+  "module": "distribution/index.mjs",
+  "types": "distribution/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./distribution/index.d.ts",
+      "import": "./distribution/index.mjs",
+      "require": "./distribution/index.js"
+    },
+    "./react": {
+      "types": "./distribution/react/index.d.ts",
+      "import": "./distribution/react/index.mjs",
+      "require": "./distribution/react/index.js"
+    },
+    "./modules": {
+      "types": "./distribution/modules/index.d.ts",
+      "import": "./distribution/modules/index.mjs",
+      "require": "./distribution/modules/index.js"
+    }
+  },
+  "files": [
+    "distribution",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "parallax",
+    "physics",
+    "scroll",
+    "animation",
+    "library",
+    "javascript",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/builtbyjonas/paralux.git"
+  },
+  "homepage": "https://github.com/builtbyjonas/paralux#readme",
+  "bugs": {
+    "url": "https://github.com/builtbyjonas/paralux/issues/new"
+  },
+  "author": "ByJonas <jonasfranke@sdevs.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.5.0",
+    "@types/normalize-wheel": "^1.0.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "jsdom": "^29.0.1",
+    "prettier": "^3.8.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  },
+  "dependencies": {
+    "normalize-wheel": "^1.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
