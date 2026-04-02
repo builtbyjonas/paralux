@@ -49,7 +49,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/builtbyjonas/paralux.git"
+    "url": "git+https://github.com/builtbyjonas/paralux.git"
   },
   "homepage": "https://github.com/builtbyjonas/paralux#readme",
   "bugs": {
